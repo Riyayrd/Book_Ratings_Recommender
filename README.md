@@ -1,10 +1,13 @@
 # Book_Ratings_Recommender
 Books Rating Predtictor - Recommender Systems
+
 Collaborative Filtering Book Recommendation System
+
 👩‍💻 Author
 Riya Disawal
 
 📝 Overview
+
 This project implements an Item-Item Collaborative Filtering algorithm to predict user ratings for books they have not yet rated. The model is evaluated using the Mean Absolute Difference (MAD) metric on a held-out test set.
 
 The algorithm relies on the assumption that users tend to rate similar items similarly. Therefore, by computing item similarity using cosine similarity and leveraging the ratings a user has given to similar items, the system predicts unknown ratings.
@@ -35,35 +38,49 @@ It is also evaluated across different train/test splits from 60% to 90% in 5% in
 Clone or download this repository.
 
 Place the dataset files in the same directory:
-Ratings.csv
-Users.csv
-Books.csv
+
+Ratings.csv (Used in the code)
+
+Users.csv (Available)
+
+Books.csv (Available)
 
 Run the main Python script:
+
 python Collaborative_Filtering.py
+
 Note: Ensure the dataset files are properly formatted with UTF-8 or Latin-1 encoding if needed.
 
 📦 Dependencies
+
 This project uses the following Python libraries:
-pandas
-numpy
-scikit-learn
-tqdm (for progress bars)
+
+pandas, numpy, scikit-learn, tqdm (for progress bars)
 
 You can install all dependencies using:
+
 pip install pandas numpy scikit-learn tqdm
 
 📊 Example Output
+
 k = 5, MAD = 1.2034
+
 k = 10, MAD = 1.1891
+
 k = 15, MAD = 1.1778
 ...
 
 
+
+
 📁 File Structure
-.
-├── Collaborative_filtering.py         # Main collaborative filtering implementation
-├── Ratings.csv              # Ratings data (User-ID, ISBN, Book-Rating)
-├── Books.csv                # Book metadata
-├── Users.csv                # User metadata
-├── README.md                # This file
+
+Collaborative_filtering.py         # Main collaborative filtering implementation
+
+Ratings.csv              # Ratings data (User-ID, ISBN, Book-Rating)
+
+Books.csv                # Book metadata
+
+Users.csv                # User metadata
+
+README.md                # This file
