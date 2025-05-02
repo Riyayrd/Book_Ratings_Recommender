@@ -75,7 +75,7 @@ k = 15, MAD = 1.1778
 
 📁 File Structure
 
-Collaborative_filtering.py         # Main collaborative filtering implementation
+Collaborative_filtering.ipynb         # Main collaborative filtering implementation
 
 Ratings.csv              # Ratings data (User-ID, ISBN, Book-Rating)
 
